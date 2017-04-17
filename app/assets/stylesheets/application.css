@@ -26,3 +26,15 @@ body {
 p {
 	color: white;
 }
+
+main_image {
+	align-self: center;
+}
+
+a {
+	color: green;
+}
+
+a:visited {
+	color: hotpink;
+}
