@@ -17,6 +17,7 @@ h1 {
 	color: white;
 	font-family: Verdana;
 	text-align: center;
+	text-shadow: 2px 2px #000000;
 }
 
 body {
@@ -51,4 +52,14 @@ label {
 input {
 	height: 20px;
 
+}
+
+td {
+	color: #effff1;
+	text-shadow: 2px 2px #000000;
+}
+
+th {
+	color: #8eff32;
+	font-size: 24px;
 }
