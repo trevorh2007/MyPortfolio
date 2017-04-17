@@ -17,6 +17,7 @@ h1 {
 	color: white;
 	font-family: Verdana;
 	text-align: center;
+	text-shadow: 2px 2px #000000;
 }
 
 body {
@@ -25,4 +26,40 @@ body {
 
 p {
 	color: white;
+}
+
+main_image {
+	align-self: center;
+}
+
+a {
+	color: #8eff32;
+}
+
+a:visited {
+	color: hotpink;
+}
+
+a:hover {
+	color: white;
+	background-color: black;
+}
+
+label {
+	color: white;
+}
+
+input {
+	height: 20px;
+
+}
+
+td {
+	color: #fff7fe;
+	text-shadow: 2px 2px #000000;
+}
+
+th {
+	color: #8eff32;
+	font-size: 24px;
 }
