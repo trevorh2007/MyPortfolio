@@ -20,7 +20,7 @@ end
       subtitle: "My great service",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       main_image: "http://sites.psu.edu/zhenyangli/wp-content/uploads/sites/28301/2015/06/Portfolio-image.gif",
-      thumb_image: "http://i.imgur.com/7wjjB5a.gif"
+      thumb_image: "https://lh3.googleusercontent.com/proxy/1kDS9T2f_v3dunkwoTbdfTxbR35d2InFAk9F7aT61yy2VKMtN_DEj7wCf2-IRxUMow=w480-h270-p"
 		)
 end
 

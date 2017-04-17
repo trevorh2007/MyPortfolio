@@ -32,9 +32,13 @@ main_image {
 }
 
 a {
-	color: green;
+	color: #8eff32;
 }
 
 a:visited {
 	color: hotpink;
+}
+
+a:hover {
+	color: white;
 }
