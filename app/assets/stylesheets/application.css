@@ -20,6 +20,17 @@ h1 {
 	text-shadow: 2px 2px #000000;
 }
 
+h2 {
+	color: white;
+	font-family: Verdana;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+}
+
+li {
+	color: white;
+}
+
 body {
 	background-image: url("http://wallpapercave.com/wp/UoQbFHi.jpg");
 }
@@ -34,6 +45,11 @@ main_image {
 
 a {
 	color: #8eff32;
+}
+
+a img {
+	display: block;
+	text-align: center;
 }
 
 a:visited {
@@ -62,4 +78,9 @@ td {
 th {
 	color: #8eff32;
 	font-size: 24px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
