@@ -27,6 +27,13 @@ h2 {
 	text-shadow: 2px 2px #000000;
 }
 
+h3 {
+	color: white;
+	font-family: Verdana;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+}
+
 li {
 	color: white;
 }
@@ -83,4 +90,8 @@ th {
 img {
     display: block;
     margin: 0 auto;
+}
+
+i {
+	color: white;
 }
