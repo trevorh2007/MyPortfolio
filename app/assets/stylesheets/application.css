@@ -20,6 +20,17 @@ h1 {
 	text-shadow: 2px 2px #000000;
 }
 
+h2 {
+	color: white;
+	font-family: Verdana;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+}
+
+li {
+	color: white;
+}
+
 body {
 	background-image: url("http://wallpapercave.com/wp/UoQbFHi.jpg");
 }
