@@ -47,6 +47,11 @@ a {
 	color: #8eff32;
 }
 
+a img {
+	display: block;
+	text-align: center;
+}
+
 a:visited {
 	color: hotpink;
 }
@@ -73,4 +78,9 @@ td {
 th {
 	color: #8eff32;
 	font-size: 24px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
