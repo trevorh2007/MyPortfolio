@@ -47,9 +47,9 @@
 
   def destroy
     # Perform the lookup
-    @portfolio_item = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id]).technologies
 
-    # Destroy/elete the record
+    # Destroy/delete the record
     @portfolio_item.destroy
 
     #Redirect
