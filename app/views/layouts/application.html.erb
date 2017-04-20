@@ -20,8 +20,7 @@
 
       <%= yield %>
 
-      <% if session[:source] %>
-        <h3>Thanks for visiting me from <%= session[:source].capitalize %>!</h3>
-      <% end %>
+      <%= source_helper("application") %>
+
   </body>
 </html>
