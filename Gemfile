@@ -57,3 +57,5 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'howard_copyright_tool', git: 'https://github.com/trevorh2007/howard_copyright_tool'
+
+gem 'petergate', '~> 1.7', '>= 1.7.3'
