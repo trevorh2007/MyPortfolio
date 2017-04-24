@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/trevorh2007/howard_copyright_tool
+  revision: 02eedcadece2dffff22f7c72c0c580a794e7e553
+  specs:
+    howard_copyright_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +193,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.2, >= 4.2.1)
   friendly_id (~> 5.1.0)
+  howard_copyright_tool!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

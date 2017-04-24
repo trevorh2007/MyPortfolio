@@ -17,4 +17,7 @@ module ApplicationHelper
     end
   end
 
+  def set_copyright
+    HowardCopyrightTool::Renderer.copyright "Trevor Howard", "Don't touch my code"
+  end
 end
