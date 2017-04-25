@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -14,18 +14,23 @@
   </head>
 
   <body>
-  		<p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
 
-      <%= render "shared/nav", location: 'top' %>
 
-      <%= login_helper %>
+          <%= render "shared/application_nav" %>
 
-      <%= yield %>
+          <%= login_helper %>
 
-      <%= set_copyright %>
+          <%= yield %>
 
-      <%= source_helper("application") %>
+          <%= set_copyright %>
 
+          <%= source_helper("application") %>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
