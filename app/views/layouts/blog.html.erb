@@ -18,32 +18,19 @@
 
 		  <%= render 'shared/blog_nav' %>
 
-    <!-- start of blog header -->
-    <div class="blog-header">
+      <%= render 'shared/blog_masthead' %>
+
       <div class="container">
-        <h1 class="blog-title">Here come the Blogs</h1>
-        <p class="lead blog-description">The real answers when you didn't even ask a question.</p>
-        <%= link_to 'Create New Blog', new_blog_path, class: 'btn btn-sm btn-success' if logged_in?(:site_admin) %>
+
+        <div class="row">
+
+        <%= yield %>
+
+        <%= render 'shared/blog_sidebar' %>
+
       </div>
-    </div>
-    <!-- end of blog header -->
 
-    <div class="container">
-
-      <div class="row">
-
-      <%= yield %>
-
-      <%= render 'shared/blog_sidebar' %>
-
-    </div>
-
-      <footer class="blog-footer">
-        <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
+      <%= render 'shared/blog_footer' %>
 
       <%= source_helper("blog") %>
       
