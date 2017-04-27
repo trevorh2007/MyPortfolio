@@ -46,7 +46,7 @@
 
   def destroy
     # Destroy/delete the record
-    @portfolio_item.technologies.destroy
+    @portfolio_item.destroy
 
     #Redirect
     respond_to do |format|
@@ -59,7 +59,9 @@
   def portfolio_params
     params.require(:portfolio).permit(:title, 
                                       :subtitle,
-                                      :body, 
+                                      :body,
+                                      :main_image,
+                                      :thumb_image,
                                       technologies_attributes: [:id, :name, :_destroy]
                                       )
   end
