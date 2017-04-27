@@ -84,7 +84,8 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: black;
+  border-bottom-color: white;
+  color: white;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -192,7 +193,9 @@ body {
   float: none;
 }
 
-
+.app-nav span {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
 
 
 
