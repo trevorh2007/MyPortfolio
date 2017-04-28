@@ -21,6 +21,6 @@ class Portfolio < ApplicationRecord
 
 	def set_defaults
 		self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
-		self.thumb_image ||= "https://lh3.googleusercontent.com/proxy/1kDS9T2f_v3dunkwoTbdfTxbR35d2InFAk9F7aT61yy2VKMtN_DEj7wCf2-IRxUMow=w480-h270-p"
+		self.thumb_image ||= "https://media.giphy.com/media/3kIcyN7fUtlUA/giphy.gif"
 	end
 end
