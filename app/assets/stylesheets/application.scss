@@ -197,9 +197,14 @@ body {
   padding: 0rem 1.25rem 0rem 1.25rem;
 }
 
-
-
-
+.name-about a {
+  color: black;
+}
+.name-about.active {
+  color: white;
+  border-bottom: .25rem solid;
+  border-bottom-color: white;
+} 
 
 
 
