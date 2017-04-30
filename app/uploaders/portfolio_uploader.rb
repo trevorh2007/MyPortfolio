@@ -1,5 +1,6 @@
 class PortfolioUploader < CarrierWave::Uploader::Base
 
+  # change to :aws when you get a bucket name placed in .ENV
   storage :file
 
   def store_dir
