@@ -60,4 +60,20 @@ module ApplicationHelper
   def active? path
     "active" if current_page? path
   end
+
+  def alerts
+    alert = flash[:alert]
+    error = flash[:error]
+    notice = flash[:notice]
+
+    if alert
+      js add_gritter(alert, title: "Trevor Howard Portfolio", sticky: false, image: :warning)
+    elsif error
+      js add_gritter(error, title: "Trevor Howard Portfolio", sticky: false, image: :error)
+    else notice
+      js add_gritter(notice, title: "Trevor Howard Portfolio", sticky: false, image: :success)
+    end
+    
+  end
+
 end
