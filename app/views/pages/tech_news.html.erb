@@ -6,7 +6,12 @@
   		<div class="col-md-6">
   			<div class="tech-news">
   				<div class="card">
-  					<%= tweet %>
+  					<div class="card-header">
+  						<%= tweet.split.first[0..-2] %>
+  					</div>
+  					<div class="card-block">
+  						<%= twitter_parser tweet.split(' ')[1..-1].join(' ') %>
+  					</div>
   				</div>
   			</div>
   		</div>
