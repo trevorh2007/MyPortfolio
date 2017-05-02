@@ -1,13 +1,13 @@
 <div class="inner cover">
-  <h1 class="cover-heading">Disney News</h1>
+  <h1 class="cover-heading">Programming News</h1>
 
   <div class="row">
   	<% @tweets.each do |tweet| %>
   		<div class="col-md-6">
   			<div class="tech-news">
   				<div class="card tech-news">
-  					<div class="card-header">
-  						<%= tweet.split.first[0..-2] %>'s tweet:
+  					<div class="card-header card-header-user">
+  						<%= tweet.split.first[0..-1].capitalize %>'s Tweet:
   					</div>
   					<div class="card-block">
   						<%= twitter_parser tweet.split(' ')[1..-1].join(' ') %>
