@@ -6,7 +6,7 @@
 		<p class="blog-post-meta">
 			<%= link_to blog.status, toggle_status_blog_path(blog), class: 'btn btn-sm btn-primary' %> 
 			<%= link_to 'Edit', edit_blog_path(blog), class: 'btn btn-sm btn-primary' %> 
-			<%= link_to 'Delete Blog', blog, class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
+			<%= link_to 'Delete Blog', blog, class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Delete: #{blog.title}?", commit: 'Do it!', cancel: 'Not Yet' } %>
 		</p>
 	<% end %>
 
@@ -14,4 +14,3 @@
 		<%= blog.body %>
 	</p>
 </div>
-

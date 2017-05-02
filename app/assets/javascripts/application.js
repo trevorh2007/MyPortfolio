@@ -17,5 +17,6 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require data-confirm-modal
 //= require turbolinks
 //= require_tree .
