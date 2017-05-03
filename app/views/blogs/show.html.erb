@@ -12,18 +12,7 @@
   	<%= @blog.notes if logged_in?(:site_admin) %>
   </h5>
 
-  <% unless current_user.is_a? GuestUser %>
-  	<%= form_for @comment, url: '#' do |f| %>
-  		<div class="form-group">
-  			<%= f.label :Leave_a_Comment! %>
-  			<%= f.text_area :content, class: 'form-control', placeholder: "Comment here" %>
-  		</div>
-
-  		<div id="blog-cmt-btn">
-  		<%= f.submit 'Comment', class: 'btn btn-primary' %>
-  		</div>
-  	<% end %>
-  <% end %>
+  <%= render 'comments/comment_form' %>
 
   <%= render @blog.comments %>
 
