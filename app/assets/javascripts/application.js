@@ -18,5 +18,6 @@
 //= require cocoon
 //= require gritter
 //= require data-confirm-modal
+//= require cable
 //= require turbolinks
 //= require_tree .
