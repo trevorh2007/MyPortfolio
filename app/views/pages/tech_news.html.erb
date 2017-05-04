@@ -7,7 +7,7 @@
   			<div class="tech-news">
   				<div class="card tech-news">
   					<div class="card-header card-header-user">
-  						<%= tweet.split.first[0..-1].capitalize %>'s Tweet:
+  						<b><%= tweet.split.first[0..-1].capitalize %>'s</b> Tweet:
   					</div>
   					<div class="card-block">
   						<%= twitter_parser tweet.split(' ')[1..-1].join(' ') %>
