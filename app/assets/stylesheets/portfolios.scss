@@ -65,19 +65,28 @@ footer p {
  * Customer Styles
  */
 
- .portfolio-form {
+.portfolio-form {
   padding-top: 20px;
- }
+}
 
- .port-show-pad {
+.port-show-pad {
   padding-top: 20px;
- }
+}
 
- .port-container {
+.port-container {
   padding-top: 30px;
-  }
+}
 
-  .remove-tech {
+.sub-port-img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.remove-tech {
     float: right;
     margin-top: 7px;
-  }
+}
+
+#delete-port {
+  
+}
