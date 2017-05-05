@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def set_copyright
-    HowardCopyrightTool::Renderer.copyright "Trevor Howard", "Don't touch my code"
+    HowardCopyrightTool::Renderer.copyright "Trevor Howard", "All rights reserved"
   end
 
   def nav_items
