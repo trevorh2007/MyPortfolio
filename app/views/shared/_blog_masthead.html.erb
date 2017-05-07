@@ -1,7 +1,13 @@
 <div class="blog-header">
   <div class="container">
-    <h1 class="blog-title">Here come the Blogs</h1>
-    <p class="lead blog-description">The real answers when you didn't even ask a question.</p>
+    <h1 class="blog-title">My Blog</h1>
+    <p class="lead blog-description">And Interesting Thoughts</p>
+    <span>
     <%= link_to 'Create New Blog', new_blog_path, class: 'btn btn-sm btn-success' if logged_in?(:site_admin) %>
+
+    </span>
+    <span>
+    <%= link_to 'Topics', topics_path, class: 'btn btn-sm btn-info'  %>
+    </span>
   </div>
 </div>

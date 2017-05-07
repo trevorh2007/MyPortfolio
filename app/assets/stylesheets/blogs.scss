@@ -169,7 +169,6 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-
 /*
  * Custom styles
  */
@@ -190,7 +189,7 @@ h6, .h6 {
 
 .comment-card > .card {
   margin-top: 15px;
-  border: 2px solid black;
+  border: 3px solid #66aa88;
   clear: both;
 }
 
@@ -202,4 +201,13 @@ h6, .h6 {
 }
 .comment-name {
   font-weight: 700;
+}
+
+:placeholder-shown {
+  font-style: italic;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease; 
+  opacity: 0;
 }

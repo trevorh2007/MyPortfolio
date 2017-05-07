@@ -65,19 +65,47 @@ footer p {
  * Customer Styles
  */
 
- .portfolio-form {
+.portfolio-form {
   padding-top: 20px;
- }
+}
 
- .port-show-pad {
+.port-show-pad {
   padding-top: 20px;
- }
+}
 
- .port-container {
+.port-show-pad img {
+  padding-top: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.port-container {
   padding-top: 30px;
-  }
+}
 
-  .remove-tech {
+.sub-port-img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.sub-port-img:hover img {
+  opacity: 0.5;
+}
+
+.remove-tech {
     float: right;
     margin-top: 7px;
-  }
+}
+
+#title-attrib {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#port-subtitle {
+  padding-left: 5px;
+}
