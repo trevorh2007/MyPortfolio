@@ -1,4 +1,21 @@
-# this file will take schema.rb info
+User.create!(
+  email: "admin@admin.com",
+  password: "hellohello",
+  password_confirmation: "hellohello",
+  name: "Admin Admin",
+  roles: "site_admin"
+  )
+
+puts "1 Admin user created"
+
+User.create!(
+  email: "test@test.com",
+  password: "hellohello",
+  password_confirmation: "hellohello",
+  name: "Regular User",
+  )
+
+puts "1 Regular user created"
 
 3.times do |topic|
   Topic.create!(
