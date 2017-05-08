@@ -1,10 +1,13 @@
 <div class="album text-muted">
   <div class="container">
   	<%= source_helper("alert alert-warning port-sidebar-help") %>
-    <div class="row <%= "sortable" if logged_in?(:site_admin) %> ">
+  	<div id="port-index-layout">
 
-			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
-			
+	    <div class="row <%= "sortable" if logged_in?(:site_admin) %> ">
+
+				<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+				
+			</div>
 		</div>
 	</div>
 </div>
