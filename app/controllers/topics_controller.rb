@@ -14,4 +14,10 @@ class TopicsController < ApplicationController
       @blogs = @topic.blogs.Published.recent.page(params[:page]).per(5)
     end
   end
+
+  private
+
+  def set_sidebar_topics
+    @side_bar_topics = Topic.with_blogs
+  end
 end
