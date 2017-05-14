@@ -1,0 +1,58 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+  include DeviseWhitelist
+  include SetSource
+  include CurrentUserConcern
+  include DefaultPageContent
+
+  before_action :set_copyright
+
+  def set_copyright
+  	@copyright = HowardViewTool::Renderer.copyright "Trevor Howard", "Don't touch my code"
+  end
+end
+
+
+module HowardViewTool
+	class Renderer
+		def self.copyright name, msg
+			"&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+		end
+	end
+end# My Personal Portfolio
+
+> Ruby Version 2.4.0
+
+### 04/12/2017
+
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  		<p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= render "shared/nav", location: 'top' %>
+
+      <%= login_helper %>
+
+      <%= yield %>
+
+      <%= @copyright %>
+
+      <%= source_helper("application") %>
+
+  </body>
+</html>
