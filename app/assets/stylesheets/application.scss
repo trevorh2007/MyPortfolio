@@ -111,8 +111,29 @@ body {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  background-color: rgba(0,0,0,.5);
+  height: 210px;
+  border-radius: 50% 50%;
+  width: 60%;
+  margin: 0 auto;
 }
+
+.home-cover {
+  margin-top: 7rem;
+}
+
+.lead {
+  margin-top: 30px;
+}
+
+.cover-heading {
+  color: white;
+  opacity: 1;
+  font-size: 42px;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px black;
+}
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: bold;
@@ -222,13 +243,6 @@ body {
 
 .app-footer {
   color: white;
-}
-
-.cover-heading {
-  color: white;
-  font-size: 42px;
-  padding-bottom: 15px;
-  letter-spacing: 2px;
 }
 
 h1 {
