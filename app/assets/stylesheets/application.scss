@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 /*
  * Globals
@@ -30,6 +31,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 body {
   color: #000000;
@@ -43,8 +45,6 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -57,7 +57,10 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+.footer-width {
+  width: 100vw;
 }
 
 
@@ -111,19 +114,32 @@ body {
  */
 
 .cover {
-  background-color: rgba(0,0,0,.5);
-  height: 210px;
-  border-radius: 50% 50%;
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 576px) {
+  .cover {
+    margin-top: 0;
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .home-cover {
-  margin-top: 7rem;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 576px) {
+  .home-cover {
+    margin-top: 30vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0 10px 0;
+  }
 }
 
 .lead {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .cover-heading {
@@ -188,11 +204,12 @@ body {
  */
 
 .email a {
-  color: purple;
+  color: antiquewhite;
 }
 
 .card-block {
   text-align: left;
+  color: white;
 }
 
 .auth-links a {
@@ -237,8 +254,6 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('Office-Day.jpg') no-repeat;
-  background-size: cover;
 }
 
 .app-footer {
@@ -254,26 +269,50 @@ h1 {
 }
 
 .tech-news {
-  padding: 5px;
-  height: 100%;
+  height: 98%;
   width: 100%;
 }
 
 .tech-news a {
-  color: #7f00ff;
+  color: lightcoral;
 }
 
 .card-header-user {
-  font-size: 24px;
-  
+  color: black;
 }
 
 .about-card {
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.75);
-  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100%;
 }
 
 .contact-page {
   height: 100%;
+}
+
+.fa {
+  color: white;
+}
+
+.navbar-toggler-right {
+  top: -10px;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  outline: 0;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  border: 0;
+  border-top: 1px solid;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
