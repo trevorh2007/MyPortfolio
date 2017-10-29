@@ -78,7 +78,6 @@ body {
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
-  font-weight: bold;
   color: white;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -315,4 +314,65 @@ hr {
 .row {
     margin-right: 0px;
     margin-left: 0px;
+}
+
+
+/* testing
+*/
+
+#menu {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+@media screen and (min-width: 992px) {
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-masthead .active {
+    color: red;
+    border-bottom: 2px solid red;
+    padding-bottom: 4px;
+  }
+  .no-gutters {
+    padding: 0;
+  }
+}
+
+.modal-height {
+  height: 104vh;
+}
+
+.modal-link a {
+  width: 100%;
+}
+
+.modal-padding a {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-padding li {
+  list-style: none;
+  margin-top: 31px;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  width: 99vw;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.inline-center-flex {
+  justify-content: center;
+  display: inline-flex;
 }
